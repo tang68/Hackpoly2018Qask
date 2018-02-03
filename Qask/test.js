@@ -19,5 +19,5 @@ function getCode() {
 			code += upper.charAt(Math.floor(Math.random() * upper.length));
 		}
 	}
-	document.getElementById("generatedCode").innerHTML = code;	
+	return code;	
 }
