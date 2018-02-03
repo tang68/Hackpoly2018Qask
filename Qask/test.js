@@ -7,7 +7,7 @@ function getCode() {
 	var code = "";
 	var lower = "abcdefghijklmnopqrstuvwxyz";
 	var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	for(int i = 0; i < 8; i++) {
+	for(var i = 0; i < 8; i++) {
 		var roll = Math.random();
 		if(roll <= .20) {
 			code += (Math.floor(Math.random() * 10) + 1);
