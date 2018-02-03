@@ -6,9 +6,9 @@
 
 <body>
 
-<!--<button id="launch-code" type="button" onclick="launchCode()">Launch Code</button> -->
+<button id="launch-code" type="button" onclick="launchCode()">Launch Code</button>
 
-<button id="enter-code" type="button" onclick="enterCode()">Enter Code</button>
+<!-- button id="enter-code" type="button" onclick="enterCode()">Enter Code</button> -->
 
 <a href="Teacher.html"><button id="launch-code" type="button"  ">Launch Code</button></a>
 
@@ -33,7 +33,7 @@
 <!-- Script -->
 <script>
 function launchCode() {
-    document.getElementById("generatedCode").innerHTML = "Hello World";
+    document.getElementById("generatedCode").innerHTML = firebase.UserInfo.displayName;
 }
 
 
