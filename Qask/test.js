@@ -13,12 +13,11 @@ function getCode() {
 			code += (Math.floor(Math.random() * 10) + 1);
 		}
 		else if(roll > .20 && roll < .8) {
-			code += lower.charAt(Math.floor(Math.random * lower.length));
+			code += lower.charAt(Math.floor(Math.random() * lower.length));
 		}
 		else if(roll >= .8) {
-			code += upper.charAt(Math.floor(Math.random * upper.length));
+			code += upper.charAt(Math.floor(Math.random() * upper.length));
 		}
 	}
-	document.getElementById("generatedCode").innerHTML = code;
-	
+	document.getElementById("generatedCode").innerHTML = code;	
 }
