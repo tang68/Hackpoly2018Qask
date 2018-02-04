@@ -30,3 +30,7 @@ function show(){
 	document.getElementsByClassName("hidden")[0].style.display = "block";
 	document.getElementsByClassName("hidden")[1].style.display = "block";
 }
+
+function checkID(id) {
+
+}

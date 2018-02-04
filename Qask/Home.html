@@ -1,44 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Qask</title>
-    <script type="text/javascript" src="funcs.js"></script>
-</head>
-    
-<body>
-
-<button id="launch-code" type="button" onclick="setText('generatedCode', getCode())">Launch Code</button>
-
-<!-- button id="enter-code" type="button" onclick="enterCode()">Enter Code</button> -->
-<button id="launch-code" type="button" onclick="enterCode()">Enter Code</button>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Qask</title>
+    <script type="text/javascript" src="funcs.js"></script>
+    <script type="text/javascript" src="firebaseConnection.js"></script>
+</head>
+
 <body>
 
 <div class="container">
     <button type="button" class="btn btn-outline-primary" id="launch-code" onclick="show()">Ask</button>
-    <button type="button" class="btn btn-outline-primary" ><a href="teacher.html">Create</a></button>
+    <button type="button" class="btn btn-outline-primary"><a href="teacher.html">Create</a></button>
     <br>
-    <input type="text" class="hidden" >
-    <button type="button" class="btn btn-outline-primary hidden" >Connect</button>
+    <input type="text" class="hidden">
+    <button type="button" class="btn btn-outline-primary hidden"><a href="Student.html">Connect</a></button>
 
 </div>
-
-<p id="generatedCode">what up</p> 
 
 <!-- Firebase Connection -->
 <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
 <script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBnfg2n-X_N5fVSMctg0P59mAACfRVOVoU",
-    authDomain: "qask-e160f.firebaseapp.com",
-    databaseURL: "https://qask-e160f.firebaseio.com",
-    projectId: "qask-e160f",
-    storageBucket: "",
-    messagingSenderId: "1003021609094"
-  };
-  firebase.initializeApp(config);
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBnfg2n-X_N5fVSMctg0P59mAACfRVOVoU",
+        authDomain: "qask-e160f.firebaseapp.com",
+        databaseURL: "https://qask-e160f.firebaseio.com",
+        projectId: "qask-e160f",
+        storageBucket: "",
+        messagingSenderId: "1003021609094"
+    };
+    firebase.initializeApp(config);
 </script>
 
 
