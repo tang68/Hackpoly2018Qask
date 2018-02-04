@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Qask</title>
+</head>
+
+<body>
+
+<!--<button id="launch-code" type="button" onclick="launchCode()">Launch Code</button> -->
+
+<button id="enter-code" type="button" onclick="enterCode()">Enter Code</button>
+
+<a href="Teacher.html"><button id="launch-code" type="button"  ">Launch Code</button></a>
+
+<p id="generatedCode"></p>
+
+<!-- Firebase Connection -->
+<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBnfg2n-X_N5fVSMctg0P59mAACfRVOVoU",
+    authDomain: "qask-e160f.firebaseapp.com",
+    databaseURL: "https://qask-e160f.firebaseio.com",
+    projectId: "qask-e160f",
+    storageBucket: "",
+    messagingSenderId: "1003021609094"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+<!-- Script -->
+<script>
+function launchCode() {
+    document.getElementById("generatedCode").innerHTML = "Hello World";
+}
+
+
+function enterCode() {
+    //document.getElementById("demo").innerHTML = "Hello World";
+}
+
+</script>
+
+
+</body>
+</html>
