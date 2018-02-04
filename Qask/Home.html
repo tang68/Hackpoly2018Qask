@@ -3,7 +3,7 @@
 <head>
 <title>Qask</title>
 </head>
-
+    <script type="text/javascript" src="test.js"></script>
 <body>
 
 <!--<button id="launch-code" type="button" onclick="launchCode()">Launch Code</button> -->
@@ -13,6 +13,7 @@
 <a href="Teacher.html"><button id="launch-code" type="button"  ">Launch Code</button></a>
 
 <p id="generatedCode"></p>
+
 
 <!-- Firebase Connection -->
 <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
@@ -28,18 +29,6 @@
   };
   firebase.initializeApp(config);
 </script>
-
-
-<!-- Script -->
-<script>
-function launchCode() {
-    document.getElementById("generatedCode").innerHTML = "Hello World";
-}
-</script>
-
-<script src="demo_script_src.js">
-</script>
-
 
 </body>
 </html>
