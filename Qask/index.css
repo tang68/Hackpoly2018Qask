@@ -20,3 +20,7 @@ html,body{
     background-color: #00b3db;
     border-color: #285e8e;
 }
+
+.hidden{
+     display: none;
+ }
