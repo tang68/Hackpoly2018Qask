@@ -3,6 +3,10 @@ function enterCode() {
     document.getElementById("generatedCode").innerHTML = "Hello World";
 }
 
+function setText(id, text) {
+	document.getElementById(id).innerHTML = text;
+}
+
 function getCode() {
 	var code = "";
 	var lower = "abcdefghijklmnopqrstuvwxyz";
